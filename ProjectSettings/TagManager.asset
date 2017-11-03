@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hannah1
+  - Lotta1
+  - Sofi1
+  - Anneli1
+  - Tove1
   layers:
   - Default
   - TransparentFX
