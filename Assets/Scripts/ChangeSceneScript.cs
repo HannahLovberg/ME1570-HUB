@@ -20,6 +20,11 @@ public class ChangeSceneScript : MonoBehaviour
         }
 	}
 
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+    }
+
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Hannah1")
