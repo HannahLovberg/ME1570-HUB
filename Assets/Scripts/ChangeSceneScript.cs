@@ -30,15 +30,18 @@ public class ChangeSceneScript : MonoBehaviour
 	void Update ()
     {
         int level = Application.loadedLevel;
-		if(level != 0 && Input.GetKeyDown(KeyCode.Space))
+        Scene hubScene = SceneManager.GetSceneByBuildIndex(0);
+        bool isHubScene = SceneManager.GetActiveScene() == hubScene;
+		if(!isHubScene && Input.GetKeyDown(KeyCode.Space))
         {
             OnLoadScene(0);
         }
 	}
 
-    void OnTriggerEnter(Collider col)
+    public void triggered(Collider col)
     {
-        //byt till switch
+        Debug.Log(col.gameObject.tag);
+
         if (col.gameObject.tag == "Hannah1")
         {
             OnLoadScene(2);
@@ -63,6 +66,7 @@ public class ChangeSceneScript : MonoBehaviour
 
     public void OnLoadScene(int sceneIndex)
     {
+
         nextSceneIndex = sceneIndex;
         SceneManager.LoadScene(1);
     }

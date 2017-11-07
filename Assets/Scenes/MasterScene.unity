@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.29686192, g: 0.24606448, b: 0.23193651, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -641,7 +641,6 @@ GameObject:
   m_Component:
   - component: {fileID: 196504258}
   - component: {fileID: 196504257}
-  - component: {fileID: 196504256}
   m_Layer: 0
   m_Name: Tove1Trigger
   m_TagString: Tove1
@@ -649,17 +648,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &196504256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 196504255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9e177d104afd6439b41f03a9a02b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &196504257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2110,9 +2098,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 970890315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9e177d104afd6439b41f03a9a02b2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 50ff4962f185efc4dabc656f87ac767d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneChanger: {fileID: 1465206873}
 --- !u!1 &976929774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,7 +2111,6 @@ GameObject:
   m_Component:
   - component: {fileID: 976929777}
   - component: {fileID: 976929776}
-  - component: {fileID: 976929775}
   m_Layer: 0
   m_Name: Sofi1Trigger
   m_TagString: Sofi1
@@ -2130,17 +2118,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &976929775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 976929774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9e177d104afd6439b41f03a9a02b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &976929776
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2309,7 +2286,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1054656626}
   - component: {fileID: 1054656625}
-  - component: {fileID: 1054656624}
   m_Layer: 0
   m_Name: Lotta1Trigger
   m_TagString: Lotta1
@@ -2317,17 +2293,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1054656624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1054656623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9e177d104afd6439b41f03a9a02b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1054656625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4137,7 +4102,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1676425187}
   - component: {fileID: 1676425186}
-  - component: {fileID: 1676425185}
   m_Layer: 0
   m_Name: Anneli1Trigger
   m_TagString: Anneli1
@@ -4145,17 +4109,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1676425185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1676425184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9e177d104afd6439b41f03a9a02b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1676425186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4940,7 +4893,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1887898262}
   - component: {fileID: 1887898261}
-  - component: {fileID: 1887898260}
   m_Layer: 0
   m_Name: Hannah1Trigger
   m_TagString: Hannah1
@@ -4948,17 +4900,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1887898260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1887898259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9e177d104afd6439b41f03a9a02b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1887898261
 BoxCollider:
   m_ObjectHideFlags: 0

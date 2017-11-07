@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackToHubScript : MonoBehaviour
+public class ControllerSceneTrigger : MonoBehaviour
 {
+    [SerializeField]
+    private ChangeSceneScript sceneChanger;
 
 	// Use this for initialization
 	void Start ()
@@ -16,4 +18,9 @@ public class BackToHubScript : MonoBehaviour
     {
 		
 	}
+
+    void OnTriggerEnter(Collider col)
+    {
+        sceneChanger.triggered(col);
+    }
 }
