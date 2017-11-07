@@ -1,13 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeSceneScript : MonoBehaviour
 {
-	// Use this for initialization
-	void Start ()
+    private int nextSceneIndex;
+
+    public int NextSceneIndex
     {
-		
+        get
+        {
+            return nextSceneIndex;
+        }
+
+        set
+        {
+            nextSceneIndex = value;
+        }
+    }
+
+    // Use this for initialization
+    void Start ()
+    {
+        DontDestroyOnLoad(this);
 	}
 	
 	// Update is called once per frame
@@ -16,36 +32,38 @@ public class ChangeSceneScript : MonoBehaviour
         int level = Application.loadedLevel;
 		if(level != 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            Application.LoadLevel(0);
+            OnLoadScene(0);
         }
 	}
 
-    void Awake()
-    {
-        DontDestroyOnLoad(transform.gameObject);
-    }
-
     void OnTriggerEnter(Collider col)
     {
+        //byt till switch
         if (col.gameObject.tag == "Hannah1")
         {
-            Application.LoadLevel(1);
+            OnLoadScene(2);
         }
         if (col.gameObject.tag == "Sofi1")
         {
-            Application.LoadLevel(2);
+            OnLoadScene(3);
         }
         if (col.gameObject.tag == "Anneli1")
         {
-            Application.LoadLevel(3);
+            OnLoadScene(4);
         }
         if (col.gameObject.tag == "Tove1")
         {
-            Application.LoadLevel(4);
+            OnLoadScene(5);
         }
         if (col.gameObject.tag == "Lotta1")
         {
-            Application.LoadLevel(5);
+            OnLoadScene(6);
         }
+    }
+
+    public void OnLoadScene(int sceneIndex)
+    {
+        nextSceneIndex = sceneIndex;
+        SceneManager.LoadScene(1);
     }
 }

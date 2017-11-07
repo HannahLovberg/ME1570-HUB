@@ -9,12 +9,13 @@ public class GameManagerScript : MonoBehaviour
 	void Start ()
     {
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        Cursor.visible = true;  
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        
         
     }
 }

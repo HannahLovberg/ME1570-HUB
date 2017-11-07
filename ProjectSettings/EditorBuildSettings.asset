@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterScene.unity
     guid: 974289da201f67f468df0e805a3d6356
   - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: d8c99fe0317f5204dab278d7cc8490bb
+  - enabled: 1
     path: Assets/Scenes/Hannah/HannahSpel1.unity
     guid: 729e1d1a6f3c99449bafecae8914ea8e
   - enabled: 1
