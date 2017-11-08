@@ -12,17 +12,47 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading.unity
     guid: d8c99fe0317f5204dab278d7cc8490bb
   - enabled: 1
-    path: Assets/Scenes/Hannah/HannahSpel1.unity
+    path: Assets/Scenes/Vecka 1/Hannah/HannahSpel1.unity
     guid: 729e1d1a6f3c99449bafecae8914ea8e
   - enabled: 1
-    path: Assets/Scenes/Sofi/Sofi1.unity
+    path: Assets/Scenes/Vecka 1/Sofi/Sofi1.unity
     guid: 6c7158354b29987419984c60ce7a0fb2
   - enabled: 1
-    path: Assets/Scenes/Anneli/Anneli1.unity
+    path: Assets/Scenes/Vecka 1/Anneli/Anneli1.unity
     guid: 7a0266a8947a3aa468f4a0763d0de504
   - enabled: 1
-    path: Assets/Scenes/Tove/Tove1.unity
+    path: Assets/Scenes/Vecka 1/Tove/Tove1.unity
     guid: 028310821df10fb40847e25d86ea36ec
   - enabled: 1
-    path: Assets/Scenes/Lotta/Lotta1.unity
+    path: Assets/Scenes/Vecka 1/Lotta/Lotta1.unity
     guid: b72d8ace3e47fdb4485ad4aef0182e1c
+  - enabled: 1
+    path: Assets/Scenes/Vecka 2/Hannah2/Hannah2.unity
+    guid: 771af5051b935494f8d15de226afd160
+  - enabled: 1
+    path: Assets/Scenes/Vecka 2/Sofi2/Sofi2.unity
+    guid: 7e6a5bfc435190c408848d14024bf4c1
+  - enabled: 1
+    path: Assets/Scenes/Vecka 2/Anneli2/Anneli2.unity
+    guid: b95949a7af9966c4e9bcd00313375ffe
+  - enabled: 1
+    path: Assets/Scenes/Vecka 2/Tove2/Tove2.unity
+    guid: f2d2c6b81847163418b8069e4527194d
+  - enabled: 1
+    path: Assets/Scenes/Vecka 2/Lotta2/Lotta2.unity
+    guid: 98db1e5be55b0e24b83c7b701551a15c
+  - enabled: 1
+    path: Assets/Scenes/Vecka 3/Hannah3/Hannah3.unity
+    guid: 9ce7d9032308540498543fb4fd9c9ee6
+  - enabled: 1
+    path: Assets/Scenes/Vecka 3/Sofi3/Sofi3.unity
+    guid: b29f17f9183f62a498e9108c9c863b04
+  - enabled: 1
+    path: Assets/Scenes/Vecka 3/Anneli3/Anneli3.unity
+    guid: 54a0133c59bb0784cb97fdfeb7a8c470
+  - enabled: 1
+    path: Assets/Scenes/Vecka 3/Tove3/Tove3.unity
+    guid: 3a514a3018ba3a242be2a7f96a1cfe8d
+  - enabled: 1
+    path: Assets/Scenes/Vecka 3/Lotta3/Lotta3.unity
+    guid: 71c37e097a7103b4c977e8ecba314c4b
