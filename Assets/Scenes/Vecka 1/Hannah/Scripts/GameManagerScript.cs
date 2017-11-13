@@ -20,8 +20,6 @@ public class GameManagerScript : MonoBehaviour
     //Load
     [SerializeField]
     private Canvas LoadingCanvas;
-    //[SerializeField]
-    //private loadingbar loadingBar;
 
     //Addition
     [SerializeField]
@@ -29,17 +27,31 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField]
     private Button exitToMenu;
 
-
+    //Subtraktion
     [SerializeField]
     private Canvas subtractionCanvas;
+
+    //Multiplikation
     [SerializeField]
     private Canvas multiplicationCanvas;
+
+    //Pause
+    [SerializeField]
+    private Canvas pauseMenuCanvas;
+    [SerializeField]
+    private Button resumeButton;
+    [SerializeField]
+    private Button exitToMenuButton;
 
 
     // Use this for initialization
     void Start ()
     {
-
+        additionCanvas.enabled = false;
+        subtractionCanvas.enabled = false;
+        multiplicationCanvas.enabled = false;
+        LoadingCanvas.enabled = false;
+        pauseMenuCanvas.enabled = false;
     }
 
     void Awake()
@@ -51,30 +63,73 @@ public class GameManagerScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        
+        if(additionCanvas.enabled || subtractionCanvas.enabled || multiplicationCanvas.enabled)
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                Debug.Log("pause");
+                pauseMenuCanvas.enabled = true; 
+            }
+        }
     }
 
-    public void StartAddition()
+    public void resume()
+    {
+        pauseMenuCanvas.enabled = false;
+    }
+
+    public void ButtonAddition()
     {
         menuCanvas.enabled = false;
-        additionButton.enabled = false;
-        subtractionButton.enabled = false;
-        multiplicationButton.enabled = false;
-        exitToHubButton.enabled = false;
+        //additionButton.enabled = false;
+        //subtractionButton.enabled = false;
+        //multiplicationButton.enabled = false;
+        //exitToHubButton.enabled = false;
 
         buttonPressed("goToAdd");
+    }
+    public void ButtonSubtraction()
+    {
+        menuCanvas.enabled = false;
+        buttonPressed("goToSub");
+    }
+    public void ButtonMultiplication()
+    {
+        menuCanvas.enabled = false;
+        buttonPressed("goToMult");
     }
 
     private void buttonPressed(string button)
     {
         Debug.Log("loadingbar loaded");
         LoadingCanvas.enabled = true;
-        Invoke(button, 10);
+        Invoke(button, 0.3f);
+    }
+
+    public void backtoMenu()
+    {
+        LoadingCanvas.enabled = true;
+        Invoke("goToMenu", 3);
     }
 
     public void goToAdd()
     {
         LoadingCanvas.enabled = false;
         additionCanvas.enabled = true;
+    }
+    public void goToSub()
+    {
+        LoadingCanvas.enabled = false;
+        subtractionCanvas.enabled = true;
+    }
+    public void goToMult()
+    {
+        LoadingCanvas.enabled = false;
+        multiplicationCanvas.enabled = true;
+    }
+    public void goToMenu()
+    {
+        LoadingCanvas.enabled = false;
+        menuCanvas.enabled = true;
     }
 }
