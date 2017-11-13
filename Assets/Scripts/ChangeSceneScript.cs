@@ -123,4 +123,9 @@ public class ChangeSceneScript : MonoBehaviour
         nextSceneIndex = sceneIndex;
         SceneManager.LoadScene(1);
     }
+
+    public void goBackToHub()
+    {
+        OnLoadScene(0);
+    }
 }
