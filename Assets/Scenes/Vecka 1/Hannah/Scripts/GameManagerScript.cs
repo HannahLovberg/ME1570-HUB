@@ -43,6 +43,12 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField]
     private Button exitToMenuButton;
 
+    //help
+    [SerializeField]
+    private Canvas helpCanvas;
+    [SerializeField]
+    private Button helpButton;
+
 
     // Use this for initialization
     void Start ()
@@ -52,6 +58,7 @@ public class GameManagerScript : MonoBehaviour
         multiplicationCanvas.enabled = false;
         LoadingCanvas.enabled = false;
         pauseMenuCanvas.enabled = false;
+        helpCanvas.enabled = false;
     }
 
     void Awake()
@@ -81,10 +88,6 @@ public class GameManagerScript : MonoBehaviour
     public void ButtonAddition()
     {
         menuCanvas.enabled = false;
-        //additionButton.enabled = false;
-        //subtractionButton.enabled = false;
-        //multiplicationButton.enabled = false;
-        //exitToHubButton.enabled = false;
 
         buttonPressed("goToAdd");
     }
@@ -131,5 +134,10 @@ public class GameManagerScript : MonoBehaviour
     {
         LoadingCanvas.enabled = false;
         menuCanvas.enabled = true;
+    }
+
+    public void toggleHelp()
+    {
+        helpCanvas.enabled = !helpCanvas.enabled;
     }
 }
