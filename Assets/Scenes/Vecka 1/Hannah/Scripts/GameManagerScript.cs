@@ -75,16 +75,16 @@ public class GameManagerScript : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Escape))
             {
                 Debug.Log("pause");
-                pauseMenuCanvas.enabled = true; 
+                pauseMenuCanvas.enabled = !pauseMenuCanvas.enabled; 
             }
         }
     }
-
+    //pause and unpause
     public void resume()
     {
         pauseMenuCanvas.enabled = false;
     }
-
+    //menu buttons
     public void ButtonAddition()
     {
         menuCanvas.enabled = false;
@@ -132,6 +132,7 @@ public class GameManagerScript : MonoBehaviour
     }
     public void goToMenu()
     {
+        pauseMenuCanvas.enabled = false;
         LoadingCanvas.enabled = false;
         menuCanvas.enabled = true;
     }

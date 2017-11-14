@@ -503,7 +503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 264459717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.97946, y: -3.7044983, z: 90}
+  m_LocalPosition: {x: -0.13, y: -0.55, z: 6.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2123849172}
@@ -520,6 +520,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 548af745a7b38e4498d7b5669970aee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  X:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Y: []
+  helpA: {fileID: 0}
+  helpB: {fileID: 0}
+  helpC: {fileID: 0}
 --- !u!1 &291984896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2366,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2987,8 +2995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 903, y: 508}
+  m_AnchoredPosition: {x: 0.00076675, y: -0.00065088}
+  m_SizeDelta: {x: 965.31, y: 542.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867690962
 MonoBehaviour:
@@ -3997,8 +4005,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 903, y: 508}
+  m_AnchoredPosition: {x: 0.00076675, y: -0.00065088}
+  m_SizeDelta: {x: 965.31, y: 542.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120524625
 MonoBehaviour:
@@ -4956,7 +4964,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -6503,7 +6511,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6540,8 +6548,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2123849170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 405.83493, y: 242.3677, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 564, y: 490, z: 0}
+  m_LocalScale: {x: 4.9, y: 3.39, z: 3.28}
   m_Children:
   - {fileID: 264459718}
   m_Father: {fileID: 0}

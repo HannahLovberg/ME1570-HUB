@@ -6,18 +6,10 @@ using UnityEngine.UI;
 public class Additionmanager : MonoBehaviour
 {
     [SerializeField]
-    private Text enX;
-    [SerializeField]
-    private Text tioX;
-    [SerializeField]
-    private Text hundraX;
+    private Text[] X;
 
     [SerializeField]
-    private Text enY;
-    [SerializeField]
-    private Text tioY;
-    [SerializeField]
-    private Text hundraY;
+    private Text[] Y;
 
     [SerializeField]
     private Text helpA;
@@ -26,6 +18,7 @@ public class Additionmanager : MonoBehaviour
     [SerializeField]
     private Text helpC;
 
+    private int[] numbersX;
 
 
     void Start ()
@@ -44,17 +37,20 @@ public class Additionmanager : MonoBehaviour
         int randX = Random.Range(0, 1000);
         int randY = Random.Range(0, 1000);
 
-        //X
         char[] XChars = randX.ToString().ToCharArray();
-        int[] xDigits = new int[XChars.Length];
         for (int i = 0; i < XChars.Length; i++)
         {
-            xDigits[i] = (int)XChars[i];
+            X[XChars.Length - i].text = XChars[i].ToString();
+            numbersX[XChars.Length - i] = System.Convert.ToInt32(XChars[i]);
         }
 
-        enX.text = xDigits[xDigits.Length - 1].ToString();
-        tioX.text = xDigits[xDigits.Length - 2].ToString();
-        hundraX.text = xDigits[xDigits.Length - 3].ToString();
+        for(int i = XChars.Length; i < 3; i++)
+        {
+            X[XChars.Length - i].text = "0";
+            numbersX[XChars.Length - i] = 0;
+        }
+        //ett,tio,hundra
+        
 
     }
 }

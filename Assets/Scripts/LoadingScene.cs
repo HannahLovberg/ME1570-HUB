@@ -13,14 +13,16 @@ public class LoadingScene : MonoBehaviour
 	void Start ()
     {
         int nextSceneIndex = 0;
+        int prevSceneIndex = 0;
         ChangeSceneScript helper = FindObjectOfType<ChangeSceneScript>();
 
         if (helper != null)
         {
             nextSceneIndex = helper.NextSceneIndex;
+            prevSceneIndex = helper.PrevSceneIndex;
         }
 
-        StartCoroutine(LoadNextScene(nextSceneIndex));
+        StartCoroutine(LoadNextScene(nextSceneIndex, prevSceneIndex));
     }
 	
 	// Update is called once per frame
@@ -34,13 +36,13 @@ public class LoadingScene : MonoBehaviour
         }
     }
 
-    IEnumerator LoadNextScene(int nextSceneIndex)
+    IEnumerator LoadNextScene(int nextSceneIndex, int previousScene)
     {
         AsyncOperation async = SceneManager.LoadSceneAsync(nextSceneIndex);
 
-        while(!async.isDone)
+        while (!async.isDone)
         {
             yield return null;
-        }
+        }  
     }
 }
