@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Vecka 1/Hannah/HannahSpel1.unity
     guid: 729e1d1a6f3c99449bafecae8914ea8e
   - enabled: 1
-    path: Assets/Scenes/Vecka 1/Sofi/Sofi1.unity
+    path: Assets/Scenes/Vecka 1/Sofi/Scenes/Sofi1.unity
     guid: 6c7158354b29987419984c60ce7a0fb2
   - enabled: 1
     path: Assets/Scenes/Vecka 1/Anneli/Anneli1.unity
@@ -59,3 +59,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vecka 1/Anneli/Annelispel1 scene 1.unity
     guid: 51ee7ae36dfd6814086ce2e8f6a86e21
+  - enabled: 1
+    path: Assets/Scenes/Vecka 1/Sofi/Scenes/Asia.unity
+    guid: df5cf93304265254a9451154cc82f7fc
+  - enabled: 1
+    path: Assets/Scenes/Vecka 1/Sofi/Scenes/Australia.unity
+    guid: 2b262cec8d76cde4fa94e6681ff89715
+  - enabled: 1
+    path: Assets/Scenes/Vecka 1/Sofi/Scenes/EuropeAndAfrica.unity
+    guid: df43ed5b7536af145b4d083ff6a50a52
+  - enabled: 1
+    path: Assets/Scenes/Vecka 1/Sofi/Scenes/NorthAndSouthAmerica.unity
+    guid: 99a95d0b31b26c94b8b7fe9c6d73fb7d
+  - enabled: 1
+    path: Assets/Scenes/Vecka 1/Sofi/Scenes/SouthPole.unity
+    guid: 1d8aa96527d237041a7ab4c14738ec2b
