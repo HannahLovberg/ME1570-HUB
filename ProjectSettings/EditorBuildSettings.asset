@@ -56,3 +56,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vecka 3/Lotta3/Lotta3.unity
     guid: 71c37e097a7103b4c977e8ecba314c4b
+  - enabled: 1
+    path: Assets/Scenes/Vecka 1/Anneli/IntervallScen1.unity
+    guid: 4b97e02dc8e4f934a8e4537cd678ec07

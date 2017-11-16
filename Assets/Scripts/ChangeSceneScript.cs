@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeSceneScript : MonoBehaviour
 {
     private int nextSceneIndex;
+    private int prevSceneIndex;
 
     public int NextSceneIndex
     {
@@ -20,6 +21,19 @@ public class ChangeSceneScript : MonoBehaviour
         }
     }
 
+    public int PrevSceneIndex
+    {
+        get
+        {
+            return prevSceneIndex;
+        }
+
+        set
+        {
+            prevSceneIndex = value;
+        }
+    }
+
     // Use this for initialization
     void Start ()
     {
@@ -29,7 +43,7 @@ public class ChangeSceneScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        int level = Application.loadedLevel;
+        int level = SceneManager.GetActiveScene().buildIndex;
         Scene hubScene = SceneManager.GetSceneByBuildIndex(0);
         bool isHubScene = SceneManager.GetActiveScene() == hubScene;
 		if(!isHubScene && Input.GetKeyDown(KeyCode.Space))
@@ -94,33 +108,17 @@ public class ChangeSceneScript : MonoBehaviour
                 break;
         }
 
-
-        //if (col.gameObject.tag == "Hannah1")
-        //{
-        //    OnLoadScene(2);
-        //}
-        //if (col.gameObject.tag == "Sofi1")
-        //{
-        //    OnLoadScene(3);
-        //}
-        //if (col.gameObject.tag == "Anneli1")
-        //{
-        //    OnLoadScene(4);
-        //}
-        //if (col.gameObject.tag == "Tove1")
-        //{
-        //    OnLoadScene(5);
-        //}
-        //if (col.gameObject.tag == "Lotta1")
-        //{
-        //    OnLoadScene(6);
-        //}
     }
 
     public void OnLoadScene(int sceneIndex)
     {
-
+        prevSceneIndex = SceneManager.GetActiveScene().buildIndex;
         nextSceneIndex = sceneIndex;
         SceneManager.LoadScene(1);
+    }
+
+    public void goBackToHub()
+    {
+        OnLoadScene(0);
     }
 }
