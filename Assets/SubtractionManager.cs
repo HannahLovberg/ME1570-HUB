@@ -142,6 +142,7 @@ public class SubtractionManager : MonoBehaviour
         //tio
         if ((numbersX[1] - numbersY[1]) < 0)
         {
+            //om vi lånat innan måste det vara -1!!!!!
             helpB.text = "10";
             help[1] = 10;
             answer[1] = (help[1] + numbersX[1] - numbersY[1]);
@@ -188,7 +189,6 @@ public class SubtractionManager : MonoBehaviour
     {
         switch (tal)
         {
-
             case "ental":
                 int nrEn = int.Parse(answerEn.text);
                 if (nrEn >= 9)
