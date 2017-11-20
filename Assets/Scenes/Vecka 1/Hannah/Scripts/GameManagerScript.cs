@@ -49,6 +49,23 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField]
     private Button helpButton;
 
+    //you did it
+    [SerializeField]
+    private Canvas winCanvas;
+    [SerializeField]
+    private Button winToMenu;
+
+    //sounds
+    [SerializeField]
+    private AudioSource source;
+    [SerializeField]
+    private AudioClip errorSound;
+    [SerializeField]
+    private AudioClip correctSound;
+    [SerializeField]
+    private AudioClip accessSound;
+
+    public int nrOfSolved = 0;
 
     // Use this for initialization
     void Start ()
@@ -59,6 +76,7 @@ public class GameManagerScript : MonoBehaviour
         LoadingCanvas.enabled = false;
         pauseMenuCanvas.enabled = false;
         helpCanvas.enabled = false;
+        winCanvas.enabled = false;
     }
 
     void Awake()
@@ -101,10 +119,14 @@ public class GameManagerScript : MonoBehaviour
         menuCanvas.enabled = false;
         buttonPressed("goToMult");
     }
+    public void ButtonWinMenu()
+    {
+        winCanvas.enabled = false;
+        backtoMenu();
+    }
 
     private void buttonPressed(string button)
     {
-        Debug.Log("loadingbar loaded");
         LoadingCanvas.enabled = true;
         Invoke(button, 0.3f);
     }
@@ -132,6 +154,10 @@ public class GameManagerScript : MonoBehaviour
     }
     public void goToMenu()
     {
+        nrOfSolved = 0;
+        additionCanvas.enabled = false;
+        subtractionCanvas.enabled = false;
+        multiplicationCanvas.enabled = false;
         pauseMenuCanvas.enabled = false;
         LoadingCanvas.enabled = false;
         menuCanvas.enabled = true;
@@ -140,5 +166,23 @@ public class GameManagerScript : MonoBehaviour
     public void toggleHelp()
     {
         helpCanvas.enabled = !helpCanvas.enabled;
+    }
+    public void winState()
+    {
+        playAccessSound();
+        winCanvas.enabled = true;
+    }
+
+    public void playErrorSound()
+    {
+        source.PlayOneShot(errorSound);
+    }
+    public void playCorrectSound()
+    {
+        source.PlayOneShot(correctSound);
+    }
+    public void playAccessSound()
+    {
+        source.PlayOneShot(accessSound);
     }
 }

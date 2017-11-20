@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Additionmanager : MonoBehaviour
+public class SubtractionManager : MonoBehaviour
 {
+
     [SerializeField]
     private Text[] X;
 
@@ -24,36 +25,36 @@ public class Additionmanager : MonoBehaviour
     private Text answerTio;
     [SerializeField]
     private Text answerHundra;
-    [SerializeField]
-    private Text answerTusen;
 
     private int[] numbersX = new int[3];
     private int[] numbersY = new int[3];
     private int[] help = new int[3];
 
-    private int[] answer = new int[4];
+    private int[] answer = new int[3];
+
+    private int xInt;
+    private int yInt;
 
     [SerializeField]
     private GameManagerScript gameManager;
+    
 
-    //private int nrOfSolved = 0;
 
-
-    void Start ()
+    void Start()
     {
         createProblem();
     }
 
 
-    void Update ()
+    void Update()
     {
-		if(gameManager.nrOfSolved >= 5)
+        if (gameManager.nrOfSolved >= 3)
         {
             Debug.Log("OPEN");
             openAddSafe();
             gameManager.nrOfSolved = 0;
         }
-	}
+    }
 
     private void randomizeX()
     {
@@ -66,7 +67,7 @@ public class Additionmanager : MonoBehaviour
             numbersX[i] = (int)XChars[XChars.Length - 1 - i] - 48;
         }
 
-        for (int i = XChars.Length; i < 3; i++)
+        for (int i = XChars.Length; i < 2; i++)
         {
             X[i].text = "0";
             numbersX[i] = 0;
@@ -85,12 +86,27 @@ public class Additionmanager : MonoBehaviour
             numbersY[i] = (int)YChars[YChars.Length - 1 - i] - 48;
         }
 
-        for (int i = YChars.Length; i < 3; i++)
+        for (int i = YChars.Length; i < 2; i++)
         {
             Y[i].text = "0";
             numbersY[i] = 0;
         }
         //ett,tio,hundra
+    }
+
+    private bool compareXY()
+    {
+        string compareX = X[2].text + X[1].text + X[0].text;
+       // Debug.Log("comparex: " + compareX);
+        xInt = System.Int32.Parse(compareX);
+      //  Debug.Log("xInt: " + xInt);
+
+        string compareY = Y[2].text + Y[1].text + Y[0].text;
+       // Debug.Log("comparey: " + compareY);
+        yInt = System.Int32.Parse(compareY);
+       // Debug.Log("yInt: " + yInt);
+
+        return (yInt < xInt);
     }
 
     public void createProblem()
@@ -99,56 +115,61 @@ public class Additionmanager : MonoBehaviour
         randomizeX();
         randomizeY();
 
-        for (int i = 0; i < 3; i++)
+        while (!compareXY())
+        {
+            randomizeX();
+            randomizeY();
+            Debug.Log("Randomize Y");
+        }
+
+        for (int i = 0; i < 2; i++)
         {
             help[i] = 0;
-            //Debug.Log("X" + i + " " + numbersX[2-i]);
-            //Debug.Log("Y" + i + " " + numbersY[2-i]);
-
         }
 
-        if (numbersX[0] + numbersY[0] > 9)
+        //figure it out
+        //en
+        if((numbersX[0] - numbersY[0]) < 0)
         {
-            helpA.text = "1";
-            help[0] = 1;
-            answer[0] = (numbersX[0] + numbersY[0]) % 10;
+            helpA.text = "10";
+            help[0] = 10;
+            answer[0] = (help[0] + numbersX[0] - numbersY[0]);
         }
         else
         {
-            answer[0] = (numbersX[0] + numbersY[0]);
+            answer[0] = (numbersX[0] - numbersY[0]);
         }
-        if (numbersX[1] + numbersY[1] + help[0] > 9)
+        //tio
+        if ((numbersX[1] - numbersY[1]) < 0)
         {
-            helpB.text = "1";
-            help[1] = 1;
-            answer[1] = (numbersX[1] + numbersY[1] + help[0]) % 10;
+            helpB.text = "10";
+            help[1] = 10;
+            answer[1] = (help[1] + numbersX[1] - numbersY[1]);
         }
         else
         {
-            answer[1] = (numbersX[1] + numbersY[1] + help[0]);
+            answer[1] = (numbersX[1] - numbersY[1]);
         }
-        if (numbersX[2] + numbersY[2] + help[1] > 9)
+        //hundra
+        if ((numbersX[2] - numbersY[2]) < 0)
         {
-            helpC.text = "1";
-            help[2] = 1;
-            answer[2] = (numbersX[2] + numbersY[2] + help[1]) % 10;
+            helpC.text = "10";
+            help[2] = 10;
+            answer[2] = (help[2] + numbersX[2] - numbersY[2]);
         }
         else
         {
-            answer[2] = (numbersX[2] + numbersY[2] + help[1]);
+            answer[2] = (numbersX[2] - numbersY[2]);
         }
-        answer[3] = help[2];
-      
-
-    } 
+    }
 
     public void checkSolution()
     {
-        string inputString = answerTusen.text + answerHundra.text + answerTio.text + answerEn.text;
-        //Debug.Log("input: " + inputString.ToString());
+        string inputString = answerHundra.text + answerTio.text + answerEn.text;
+        Debug.Log("input: " + inputString.ToString());
 
-        string answerString = answer[3].ToString() + answer[2].ToString() + answer[1].ToString() + answer[0].ToString();
-        //Debug.Log("answer: " + answerString.ToString());
+        string answerString = answer[2].ToString() + answer[1].ToString() + answer[0].ToString();
+        Debug.Log("answer: " + answerString.ToString());
 
         if (inputString == answerString && gameManager.nrOfSolved <= 3)
         {
@@ -165,12 +186,12 @@ public class Additionmanager : MonoBehaviour
 
     public void addNumber(string tal)
     {
-        switch(tal)
+        switch (tal)
         {
 
             case "ental":
                 int nrEn = int.Parse(answerEn.text);
-                if(nrEn >= 9)
+                if (nrEn >= 9)
                 {
                     nrEn = 0;
                 }
@@ -178,13 +199,13 @@ public class Additionmanager : MonoBehaviour
                 {
                     nrEn++;
                 }
-                
+
                 answerEn.text = nrEn.ToString();
                 break;
 
             case "tiotal":
                 int nrTio = int.Parse(answerTio.text);
-               
+
                 if (nrTio >= 9)
                 {
                     nrTio = 0;
@@ -211,29 +232,14 @@ public class Additionmanager : MonoBehaviour
 
                 answerHundra.text = nrHundra.ToString();
                 break;
-
-            case "tusental":
-                int nrTusen = int.Parse(answerTusen.text);
-
-                if (nrTusen >= 9)
-                {
-                    nrTusen = 0;
-                }
-                else
-                {
-                    nrTusen++;
-                }
-
-                answerTusen.text = nrTusen.ToString();
-                break;
         }
     }
+
     private void resetAnswer()
     {
         answerEn.text = "0";
         answerTio.text = "0";
         answerHundra.text = "0";
-        answerTusen.text = "0";
 
         helpA.text = "0";
         helpB.text = "0";
