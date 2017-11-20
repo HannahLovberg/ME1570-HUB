@@ -6,8 +6,8 @@ public class BuildPiano : MonoBehaviour {
 
 	[SerializeField]
 	private GameObject Key;
-	[SerializeField]
-	private GameObject bKey;
+	//[SerializeField]
+	//private GameObject bKey;
 
 	public AudioClip[] keySound;
 
@@ -16,10 +16,11 @@ public class BuildPiano : MonoBehaviour {
 	void Start () 
 	{
 
-		for (int i = 1; i < 53; i++)
+		for (int i = 0; i < 52; i++)
 		{
 			GameObject tempGO = Instantiate(Key, new Vector3(18+0.85f*i,10f,10.74f), new Quaternion());
-			//tempGO.GetComponent<AudioSource> ().clip = keySound [i];
+			tempGO.GetComponent<AudioSource> ().clip = keySound [i];
+			Debug.Log (i);
 		}
 
 	}
