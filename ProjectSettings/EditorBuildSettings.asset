@@ -84,6 +84,9 @@ EditorBuildSettings:
     path: Assets/Vecka 1/Anneli/Scenes/IntervallScen1.unity
     guid: 4b97e02dc8e4f934a8e4537cd678ec07
   - enabled: 1
+    path: Assets/Vecka 1/Anneli/Scenes/IntervalEasy.unity
+    guid: 84b7bcbe75d31aa468b642b5bc4d45b4
+  - enabled: 1
     path: Assets/Vecka 1/Lotta/Scenes/KeyPlay.unity
     guid: 49d82e9b9f9b34d9b9764576a2391201
   - enabled: 1
