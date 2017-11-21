@@ -558,6 +558,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1948735421602122, guid: 80307c5c961f39647a8199a2ccf94918, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80307c5c961f39647a8199a2ccf94918, type: 2}
   m_IsPrefabParent: 0
@@ -1801,6 +1805,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1237841458}
+--- !u!1 &1251034186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1948735421602122, guid: 80307c5c961f39647a8199a2ccf94918,
+    type: 2}
+  m_PrefabInternal: {fileID: 283805411}
 --- !u!1 &1416071329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,16 +2376,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1251034186}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
