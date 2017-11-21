@@ -16,8 +16,6 @@ public class SubtractionManager : MonoBehaviour
     private Text helpA;
     [SerializeField]
     private Text helpB;
-    [SerializeField]
-    private Text helpC;
 
     [SerializeField]
     private Text answerEn;
@@ -34,6 +32,9 @@ public class SubtractionManager : MonoBehaviour
 
     private int xInt;
     private int yInt;
+
+    private int minusTen = 0;
+    private int minusHundred = 0;
 
     [SerializeField]
     private GameManagerScript gameManager;
@@ -129,10 +130,24 @@ public class SubtractionManager : MonoBehaviour
 
         //figure it out
         //en
-        if((numbersX[0] - numbersY[0]) < 0)
+
+        if ((numbersX[0] - numbersY[0]) < 0)
         {
             helpA.text = "10";
             help[0] = 10;
+            X[1].color = Color.red;
+            minusTen = 1;
+
+            if((numbersX[1] - minusTen) < numbersY[1])
+            {
+                helpB.text = "10";
+                help[1] = 10;
+                minusHundred = 1;
+
+                X[2].color = Color.red;
+                minusTen = 1;
+            }
+
             answer[0] = (help[0] + numbersX[0] - numbersY[0]);
         }
         else
@@ -142,25 +157,27 @@ public class SubtractionManager : MonoBehaviour
         //tio
         if ((numbersX[1] - numbersY[1]) < 0)
         {
-            //om vi lånat innan måste det vara -1!!!!!
             helpB.text = "10";
             help[1] = 10;
-            answer[1] = (help[1] + numbersX[1] - numbersY[1]);
+            minusHundred = 1;
+            
+            X[2].color = Color.red;
+            minusTen = 1;
+           
+            answer[1] = (help[1] + numbersX[1] - minusTen - numbersY[1]);
         }
         else
         {
-            answer[1] = (numbersX[1] - numbersY[1]);
+            answer[1] = (numbersX[1] - minusTen - numbersY[1] );
         }
         //hundra
         if ((numbersX[2] - numbersY[2]) < 0)
         {
-            helpC.text = "10";
-            help[2] = 10;
-            answer[2] = (help[2] + numbersX[2] - numbersY[2]);
+            answer[2] = (numbersX[2] - minusHundred - numbersY[2]);
         }
         else
         {
-            answer[2] = (numbersX[2] - numbersY[2]);
+            answer[2] = (numbersX[2] - minusHundred - numbersY[2]);
         }
     }
 
@@ -243,7 +260,12 @@ public class SubtractionManager : MonoBehaviour
 
         helpA.text = "0";
         helpB.text = "0";
-        helpC.text = "0";
+
+        minusTen = 0;
+        minusHundred = 0;
+
+        X[1].color = Color.black;
+        X[2].color = Color.black;
 
     }
     private void openAddSafe()
