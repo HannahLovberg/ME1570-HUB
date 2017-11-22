@@ -45,9 +45,10 @@ public class GameManagerScript : MonoBehaviour
 
     //help
     [SerializeField]
-    private Canvas helpCanvas;
+    private Canvas addHelpCanvas;
     [SerializeField]
-    private Button helpButton;
+    private Canvas subHelpCanvas;
+    
 
     //you did it
     [SerializeField]
@@ -75,7 +76,8 @@ public class GameManagerScript : MonoBehaviour
         multiplicationCanvas.enabled = false;
         LoadingCanvas.enabled = false;
         pauseMenuCanvas.enabled = false;
-        helpCanvas.enabled = false;
+        addHelpCanvas.enabled = false;
+        subHelpCanvas.enabled = false;
         winCanvas.enabled = false;
     }
 
@@ -163,9 +165,17 @@ public class GameManagerScript : MonoBehaviour
         menuCanvas.enabled = true;
     }
 
-    public void toggleHelp()
+    public void toggleHelp(string type)
     {
-        helpCanvas.enabled = !helpCanvas.enabled;
+        if(type == "sub")
+        {
+            subHelpCanvas.enabled = !subHelpCanvas.enabled;
+        }
+        if(type == "add")
+        {
+            addHelpCanvas.enabled = !addHelpCanvas.enabled;
+        }
+        
     }
     public void winState()
     {
