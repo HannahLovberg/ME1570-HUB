@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Vecka 1/Tove/Tove1.unity
     guid: 028310821df10fb40847e25d86ea36ec
   - enabled: 1
-    path: Assets/Vecka 1/Lotta/Lotta1.unity
+    path: Assets/Vecka 1/Lotta/Scenes/Lotta1.unity
     guid: b72d8ace3e47fdb4485ad4aef0182e1c
   - enabled: 1
     path: Assets/Vecka 2/Hannah2/Hannah2.unity
@@ -83,3 +83,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Vecka 1/Anneli/Scenes/IntervallScen1.unity
     guid: 4b97e02dc8e4f934a8e4537cd678ec07
+  - enabled: 1
+    path: Assets/Vecka 1/Lotta/Scenes/KeyPlay.unity
+    guid: 49d82e9b9f9b34d9b9764576a2391201
+  - enabled: 1
+    path: Assets/Vecka 1/Lotta/Scenes/Loading.unity
+    guid: 89a56071f46804767b91622637dd95c2
+  - enabled: 1
+    path: Assets/Vecka 1/Lotta/Scenes/SharpFlatPlay.unity
+    guid: f7d7ad64f8d6a474f9fb3d02234d6d1c
+  - enabled: 1
+    path: Assets/Vecka 1/Lotta/Scenes/Song1.unity
+    guid: 112aacc27fbbd42bb87a38faf49bf3b6
+  - enabled: 1
+    path: Assets/Vecka 1/Lotta/Scenes/Song2.unity
+    guid: 3b9d347bee576452b91bf428ffb0c83b
