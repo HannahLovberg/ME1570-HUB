@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Scenes/Lotta1.unity
-  isLoaded: 1
-  isActive: 1
