@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public bool gameActive = false;
+
     //Menu
     [SerializeField]
     private Canvas menuCanvas;
@@ -85,19 +87,26 @@ public class GameManagerScript : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        gameActive = true;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if(additionCanvas.enabled || subtractionCanvas.enabled || multiplicationCanvas.enabled)
+        if(gameActive)
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if (additionCanvas.enabled || subtractionCanvas.enabled || multiplicationCanvas.enabled)
             {
-                Debug.Log("pause");
-                pauseMenuCanvas.enabled = !pauseMenuCanvas.enabled; 
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Debug.Log("pause");
+                    pauseMenuCanvas.enabled = !pauseMenuCanvas.enabled;
+                }
             }
         }
+
+        gameActive = false;
+        
     }
     //pause and unpause
     public void resume()
@@ -194,5 +203,14 @@ public class GameManagerScript : MonoBehaviour
     public void playAccessSound()
     {
         source.PlayOneShot(accessSound);
+    }
+
+    public void enterGame()
+    {
+        gameActive = true;
+    }
+    public void exitGame()
+    {
+        gameActive = false;
     }
 }
