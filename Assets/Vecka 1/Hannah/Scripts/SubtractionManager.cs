@@ -130,22 +130,24 @@ public class SubtractionManager : MonoBehaviour
 
         //figure it out
         //en
-
         if ((numbersX[0] - numbersY[0]) < 0)
         {
+            //låna från tiotalet
             helpA.text = "10";
             help[0] = 10;
             X[1].color = Color.red;
             minusTen = 1;
 
+            //vi kollar om tiotalet måste låna från hundratalet
             if((numbersX[1] - minusTen) < numbersY[1])
             {
+                //låna från hundratalet
                 helpB.text = "10";
                 help[1] = 10;
                 minusHundred = 1;
 
                 X[2].color = Color.red;
-                minusTen = 1;
+                minusHundred = 1;
             }
 
             answer[0] = (help[0] + numbersX[0] - numbersY[0]);
@@ -157,13 +159,12 @@ public class SubtractionManager : MonoBehaviour
         //tio
         if ((numbersX[1] - numbersY[1]) < 0)
         {
+            //låna från hundratalet
             helpB.text = "10";
             help[1] = 10;
             minusHundred = 1;
-            
             X[2].color = Color.red;
-            minusTen = 1;
-           
+
             answer[1] = (help[1] + numbersX[1] - minusTen - numbersY[1]);
         }
         else

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public bool gameActive = false;
+
     //Menu
     [SerializeField]
     private Canvas menuCanvas;
@@ -45,9 +47,10 @@ public class GameManagerScript : MonoBehaviour
 
     //help
     [SerializeField]
-    private Canvas helpCanvas;
+    private Canvas addHelpCanvas;
     [SerializeField]
-    private Button helpButton;
+    private Canvas subHelpCanvas;
+    
 
     //you did it
     [SerializeField]
@@ -75,7 +78,8 @@ public class GameManagerScript : MonoBehaviour
         multiplicationCanvas.enabled = false;
         LoadingCanvas.enabled = false;
         pauseMenuCanvas.enabled = false;
-        helpCanvas.enabled = false;
+        addHelpCanvas.enabled = false;
+        subHelpCanvas.enabled = false;
         winCanvas.enabled = false;
     }
 
@@ -83,19 +87,26 @@ public class GameManagerScript : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        gameActive = true;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if(additionCanvas.enabled || subtractionCanvas.enabled || multiplicationCanvas.enabled)
+        if(gameActive)
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if (additionCanvas.enabled || subtractionCanvas.enabled || multiplicationCanvas.enabled)
             {
-                Debug.Log("pause");
-                pauseMenuCanvas.enabled = !pauseMenuCanvas.enabled; 
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Debug.Log("pause");
+                    pauseMenuCanvas.enabled = !pauseMenuCanvas.enabled;
+                }
             }
         }
+
+        gameActive = false;
+        
     }
     //pause and unpause
     public void resume()
@@ -163,9 +174,17 @@ public class GameManagerScript : MonoBehaviour
         menuCanvas.enabled = true;
     }
 
-    public void toggleHelp()
+    public void toggleHelp(string type)
     {
-        helpCanvas.enabled = !helpCanvas.enabled;
+        if(type == "sub")
+        {
+            subHelpCanvas.enabled = !subHelpCanvas.enabled;
+        }
+        if(type == "add")
+        {
+            addHelpCanvas.enabled = !addHelpCanvas.enabled;
+        }
+        
     }
     public void winState()
     {
@@ -184,5 +203,14 @@ public class GameManagerScript : MonoBehaviour
     public void playAccessSound()
     {
         source.PlayOneShot(accessSound);
+    }
+
+    public void enterGame()
+    {
+        gameActive = true;
+    }
+    public void exitGame()
+    {
+        gameActive = false;
     }
 }

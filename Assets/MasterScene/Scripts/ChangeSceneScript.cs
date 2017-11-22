@@ -5,32 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneScript : MonoBehaviour
 {
-    private int nextSceneIndex;
-    private int prevSceneIndex;
+    private string nextSceneName;
+    private string prevSceneName;
+    
 
-    public int NextSceneIndex
+    public string NextSceneName
     {
         get
         {
-            return nextSceneIndex;
+            return nextSceneName;
         }
 
         set
         {
-            nextSceneIndex = value;
+            nextSceneName = value;
         }
     }
 
-    public int PrevSceneIndex
+    public string PrevSceneName
     {
         get
         {
-            return prevSceneIndex;
+            return prevSceneName;
         }
 
         set
         {
-            prevSceneIndex = value;
+            prevSceneName = value;
         }
     }
 
@@ -48,7 +49,7 @@ public class ChangeSceneScript : MonoBehaviour
         bool isHubScene = SceneManager.GetActiveScene() == hubScene;
 		if(!isHubScene && Input.GetKeyDown(KeyCode.Space))
         {
-            OnLoadScene(0);
+            OnLoadScene("MasterScene");
         }
 	}
 
@@ -58,67 +59,68 @@ public class ChangeSceneScript : MonoBehaviour
         {
             //vecka1
             case "Hannah1":
-                OnLoadScene(2);
+                OnLoadScene("HannahSpel1");
                 break;
             case "Sofi1":
-                OnLoadScene(3);
+                OnLoadScene("Sofi1");
                 break;
             case "Anneli1":
-                OnLoadScene(4);
+                OnLoadScene("Anneli1");
                 break;
             case "Tove1":
-                OnLoadScene(5);
+                OnLoadScene("Tove1");
                 break;
             case "Lotta1":
-                OnLoadScene(6);
+                OnLoadScene("Lotta1");
                 break;
 
             //vecka2
             case "Hannah2":
-                OnLoadScene(7);
+                OnLoadScene("Hannah2");
                 break;
             case "Sofi2":
-                OnLoadScene(8);
+                OnLoadScene("Sofi2");
                 break;
             case "Anneli2":
-                OnLoadScene(9);
+                OnLoadScene("Anneli2");
                 break;
             case "Tove2":
-                OnLoadScene(10);
+                OnLoadScene("Tove2");
                 break;
             case "Lotta2":
-                OnLoadScene(11);
+                OnLoadScene("Lotta2");
                 break;
 
                 //Vecka3
             case "Hannah3":
-                OnLoadScene(12);
+                OnLoadScene("Hannah3");
                 break;
             case "Sofi3":
-                OnLoadScene(13);
+                OnLoadScene("Sofi3");
                 break;
             case "Anneli3":
-                OnLoadScene(14);
+                OnLoadScene("Anneli3");
                 break;
             case "Tove3":
-                OnLoadScene(15);
+                OnLoadScene("Tove3");
                 break;
             case "Lotta3":
-                OnLoadScene(16);
+                OnLoadScene("Lotta3");
                 break;
         }
 
     }
 
-    public void OnLoadScene(int sceneIndex)
+    public void OnLoadScene(string sceneName)
     {
-        prevSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        nextSceneIndex = sceneIndex;
-        SceneManager.LoadScene(1);
+        prevSceneName = SceneManager.GetActiveScene().name;
+        nextSceneName = sceneName;
+        SceneManager.LoadScene(sceneName);
+        
     }
 
     public void goBackToHub()
     {
-        OnLoadScene(0);
+        OnLoadScene("MasterScene");
     }
 }
