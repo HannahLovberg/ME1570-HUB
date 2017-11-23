@@ -44,13 +44,13 @@ public class ChangeSceneScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        int level = SceneManager.GetActiveScene().buildIndex;
-        Scene hubScene = SceneManager.GetSceneByBuildIndex(0);
-        bool isHubScene = SceneManager.GetActiveScene() == hubScene;
-		if(!isHubScene && Input.GetKeyDown(KeyCode.Space))
-        {
-            OnLoadScene("MasterScene");
-        }
+  //      int level = SceneManager.GetActiveScene().buildIndex;
+  //      Scene hubScene = SceneManager.GetSceneByBuildIndex(0);
+  //      bool isHubScene = SceneManager.GetActiveScene() == hubScene;
+		//if(!isHubScene && Input.GetKeyDown(KeyCode.Space))
+  //      {
+  //          OnLoadScene("MasterScene");
+  //      }
 	}
 
     public void triggered(Collider col)
