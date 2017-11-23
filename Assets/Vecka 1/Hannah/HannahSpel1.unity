@@ -1656,7 +1656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112.1, y: 34.80005}
+  m_AnchoredPosition: {x: 112.1, y: 35.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &376648957
@@ -4558,7 +4558,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Multiplikation
+  m_Text: 'Multiplication
 
 '
 --- !u!222 &827885192
@@ -6012,7 +6012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 201.1, y: 34.8}
+  m_AnchoredPosition: {x: 201.1, y: 35.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1041482252
@@ -7577,7 +7577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Subtraktion
+  m_Text: 'Subtraction
 
 '
 --- !u!222 &1420160575
@@ -11483,7 +11483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 156.6, y: 34.80002}
+  m_AnchoredPosition: {x: 156.6, y: 36.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959989306
@@ -12106,6 +12106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5492a0b7909bc26489dafebba35887d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameActive: 0
   menuCanvas: {fileID: 1145907933}
   additionButton: {fileID: 659957906}
   subtractionButton: {fileID: 2014374637}
