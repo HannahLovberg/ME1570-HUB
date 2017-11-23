@@ -98,3 +98,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Vecka 1/Lotta/Scenes/Song1.unity
     guid: 112aacc27fbbd42bb87a38faf49bf3b6
+  - enabled: 1
+    path: Assets/Vecka 1/Lotta/Scenes/Song2.unity
+    guid: 3b9d347bee576452b91bf428ffb0c83b
