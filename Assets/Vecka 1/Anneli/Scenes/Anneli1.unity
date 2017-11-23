@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2037956666}
+      - m_Target: {fileID: 2037956665}
         m_MethodName: Changemenuscene
         m_Mode: 5
         m_Arguments:
@@ -938,8 +938,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205355739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500.5, y: 281.5, z: 0}
-  m_LocalScale: {x: 1.25125, y: 1.25125, z: 1.25125}
+  m_LocalPosition: {x: 491.5, y: 276.5, z: 0}
+  m_LocalScale: {x: 1.22875, y: 1.22875, z: 1.22875}
   m_Children:
   - {fileID: 1107849339}
   - {fileID: 1345870014}
@@ -1209,7 +1209,6 @@ GameObject:
   - component: {fileID: 2037956661}
   - component: {fileID: 2037956660}
   - component: {fileID: 2037956665}
-  - component: {fileID: 2037956666}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1294,17 +1293,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2037956659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f52164d52948ae74a8c05ea4940dd667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2037956666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2037956659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95f3dee91c37a9641af5abebd71580bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0094d5d188966e740b3b280891e962ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
