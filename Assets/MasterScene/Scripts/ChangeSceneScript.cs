@@ -68,7 +68,7 @@ public class ChangeSceneScript : MonoBehaviour
                 OnLoadScene("Anneli1");
                 break;
             case "Tove1":
-                OnLoadScene("Tove1");
+                OnLoadScene("main");
                 break;
             case "Lotta1":
                 OnLoadScene("Lotta1");

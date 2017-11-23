@@ -49,7 +49,7 @@ public class SubtractionManager : MonoBehaviour
 
     void Update()
     {
-        if (gameManager.nrOfSolved >= 3)
+        if (gameManager.nrOfSolved >= 10)
         {
             Debug.Log("OPEN");
             openAddSafe();

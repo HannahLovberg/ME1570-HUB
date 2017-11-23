@@ -324,15 +324,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1184717977}
-        m_MethodName: OnLoadScene
-        m_Mode: 3
+      - m_Target: {fileID: 2037956666}
+        m_MethodName: Changemenuscene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MasterScene
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1209,6 +1209,7 @@ GameObject:
   - component: {fileID: 2037956661}
   - component: {fileID: 2037956660}
   - component: {fileID: 2037956665}
+  - component: {fileID: 2037956666}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1294,5 +1295,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f52164d52948ae74a8c05ea4940dd667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2037956666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037956659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f3dee91c37a9641af5abebd71580bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
