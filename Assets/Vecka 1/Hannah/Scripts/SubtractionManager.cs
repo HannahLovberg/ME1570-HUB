@@ -190,7 +190,7 @@ public class SubtractionManager : MonoBehaviour
         string answerString = answer[2].ToString() + answer[1].ToString() + answer[0].ToString();
         Debug.Log("answer: " + answerString.ToString());
 
-        if (inputString == answerString && gameManager.nrOfSolved <= 3)
+        if (inputString == answerString)
         {
             Debug.Log("CORRECT");
             gameManager.playCorrectSound();

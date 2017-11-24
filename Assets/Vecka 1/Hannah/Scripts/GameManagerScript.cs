@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour
 {
-    public bool gameActive = false;
-
     //Menu
     [SerializeField]
     private Canvas menuCanvas;
@@ -36,14 +34,6 @@ public class GameManagerScript : MonoBehaviour
     //Multiplikation
     [SerializeField]
     private Canvas multiplicationCanvas;
-
-    //Pause
-    [SerializeField]
-    private Canvas pauseMenuCanvas;
-    [SerializeField]
-    private Button resumeButton;
-    [SerializeField]
-    private Button exitToMenuButton;
 
     //help
     [SerializeField]
@@ -77,7 +67,6 @@ public class GameManagerScript : MonoBehaviour
         subtractionCanvas.enabled = false;
         multiplicationCanvas.enabled = false;
         LoadingCanvas.enabled = false;
-        pauseMenuCanvas.enabled = false;
         addHelpCanvas.enabled = false;
         subHelpCanvas.enabled = false;
         winCanvas.enabled = false;
@@ -87,33 +76,15 @@ public class GameManagerScript : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        gameActive = true;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if(gameActive)
-        {
-            if (additionCanvas.enabled || subtractionCanvas.enabled || multiplicationCanvas.enabled)
-            {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    Debug.Log("pause");
-                    pauseMenuCanvas.enabled = !pauseMenuCanvas.enabled;
-                }
-            }
-        }
 
-        gameActive = false;
         
     }
-    //pause and unpause
-    public void resume()
-    {
-        pauseMenuCanvas.enabled = false;
-    }
-    //menu buttons
+ 
     public void ButtonAddition()
     {
         menuCanvas.enabled = false;
@@ -145,7 +116,7 @@ public class GameManagerScript : MonoBehaviour
     public void backtoMenu()
     {
         LoadingCanvas.enabled = true;
-        Invoke("goToMenu", 3);
+        Invoke("goToMenu", 1);
     }
 
     public void goToAdd()
@@ -169,7 +140,6 @@ public class GameManagerScript : MonoBehaviour
         additionCanvas.enabled = false;
         subtractionCanvas.enabled = false;
         multiplicationCanvas.enabled = false;
-        pauseMenuCanvas.enabled = false;
         LoadingCanvas.enabled = false;
         menuCanvas.enabled = true;
     }
@@ -205,12 +175,5 @@ public class GameManagerScript : MonoBehaviour
         source.PlayOneShot(accessSound);
     }
 
-    public void enterGame()
-    {
-        gameActive = true;
-    }
-    public void exitGame()
-    {
-        gameActive = false;
-    }
+    
 }
