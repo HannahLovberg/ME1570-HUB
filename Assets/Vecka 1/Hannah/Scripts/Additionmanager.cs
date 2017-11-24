@@ -36,8 +36,6 @@ public class Additionmanager : MonoBehaviour
     [SerializeField]
     private GameManagerScript gameManager;
 
-    //private int nrOfSolved = 0;
-
 
     void Start ()
     {
@@ -102,8 +100,6 @@ public class Additionmanager : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             help[i] = 0;
-            //Debug.Log("X" + i + " " + numbersX[2-i]);
-            //Debug.Log("Y" + i + " " + numbersY[2-i]);
 
         }
 
@@ -145,12 +141,12 @@ public class Additionmanager : MonoBehaviour
     public void checkSolution()
     {
         string inputString = answerTusen.text + answerHundra.text + answerTio.text + answerEn.text;
-        //Debug.Log("input: " + inputString.ToString());
+        Debug.Log("input: " + inputString.ToString());
 
         string answerString = answer[3].ToString() + answer[2].ToString() + answer[1].ToString() + answer[0].ToString();
-        //Debug.Log("answer: " + answerString.ToString());
+        Debug.Log("answer: " + answerString.ToString());
 
-        if (inputString == answerString && gameManager.nrOfSolved <= 3)
+        if (inputString == answerString)
         {
             Debug.Log("CORRECT");
             gameManager.playCorrectSound();

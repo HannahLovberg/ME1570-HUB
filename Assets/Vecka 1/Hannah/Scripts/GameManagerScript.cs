@@ -67,7 +67,6 @@ public class GameManagerScript : MonoBehaviour
         subtractionCanvas.enabled = false;
         multiplicationCanvas.enabled = false;
         LoadingCanvas.enabled = false;
-        //pauseMenuCanvas.enabled = false;
         addHelpCanvas.enabled = false;
         subHelpCanvas.enabled = false;
         winCanvas.enabled = false;
@@ -117,7 +116,7 @@ public class GameManagerScript : MonoBehaviour
     public void backtoMenu()
     {
         LoadingCanvas.enabled = true;
-        Invoke("goToMenu", 3);
+        Invoke("goToMenu", 1);
     }
 
     public void goToAdd()
