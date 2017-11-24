@@ -47,7 +47,7 @@ public class Additionmanager : MonoBehaviour
 
     void Update ()
     {
-		if(gameManager.nrOfSolved >= 3)
+		if(gameManager.nrOfSolved >= 5)
         {
             Debug.Log("OPEN");
             openAddSafe();
