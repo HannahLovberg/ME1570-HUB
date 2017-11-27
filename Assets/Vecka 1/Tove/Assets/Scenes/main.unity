@@ -229,7 +229,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.64, y: 1.15}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 1.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -270,12 +270,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 6d6a1b5a26b27bd4abbfd70410f47356, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dc311297a05d471382f9ac8d360a26f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.64, y: 1.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -463,7 +463,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306248384
 GameObject:
@@ -512,8 +512,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 1b907630257b3a0479fc10646e4d2d98, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 39f6697b7d6af47a086c1ae455a4bc9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -530,11 +530,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306248384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.497, y: 0.298, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.381, y: 0.3019, z: 0}
+  m_LocalScale: {x: 1.1366675, y: 1.1366675, z: 1.1366675}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &334192546
 GameObject:
@@ -680,7 +680,7 @@ RectTransform:
   m_Children:
   - {fileID: 2131050433}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -892,7 +892,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 666431ad8e93d9344b9545231926f17e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -953,7 +953,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262912947939440, guid: 6d68b7f77b0485646aab2f53ff6a2d87, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114579355414755270, guid: 6d68b7f77b0485646aab2f53ff6a2d87,
         type: 2}
@@ -1439,7 +1439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &980260197
 GameObject:
@@ -1510,7 +1510,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &983427486
 GameObject:
@@ -1560,7 +1560,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: ef5f4208a0f5c1e408eeb20d372723d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8fd19b8bceafd476980df7329ec8c544, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1581,7 +1581,7 @@ Transform:
   m_LocalScale: {x: 1.0900003, y: 1.0900003, z: 1.0900003}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058606606
 GameObject:
@@ -1717,7 +1717,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1110820979
 GameObject:
@@ -1744,6 +1744,7 @@ Transform:
   m_LocalPosition: {x: 1.8, y: -2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1551071406}
   - {fileID: 1267452367}
   - {fileID: 937631916}
   - {fileID: 1445762004}
@@ -1754,7 +1755,7 @@ Transform:
   - {fileID: 1324830964}
   - {fileID: 1869472703}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1154377739
 Prefab:
@@ -1819,6 +1820,27 @@ Prefab:
         type: 2}
       propertyPath: orthographic size
       value: 4.176159
+      objectReference: {fileID: 0}
+    - target: {fileID: 212142450015102242, guid: 8bdd1d10b50374443bd8660233a7cdc9,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77405a55b4d684789bd65b8feba451ef,
+        type: 3}
+    - target: {fileID: 212142450015102242, guid: 8bdd1d10b50374443bd8660233a7cdc9,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 212142450015102242, guid: 8bdd1d10b50374443bd8660233a7cdc9,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 212142450015102242, guid: 8bdd1d10b50374443bd8660233a7cdc9,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bdd1d10b50374443bd8660233a7cdc9, type: 2}
@@ -1910,7 +1932,7 @@ RectTransform:
   m_Children:
   - {fileID: 852851552}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1965,7 +1987,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 752e141f7c465994581ccd5060593ff2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9eef5b20db40a4689bd6b7a2c6d8a25f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1986,7 +2008,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1318670079
 GameObject:
@@ -2036,7 +2058,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 7ffe0772a0ee5dd41b70560fb4ca3a28, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fde138f5263ae4f8fbc037b438b4d3c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2057,7 +2079,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324830962
 GameObject:
@@ -2106,8 +2128,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 551f032ef4dcd94458ab2c62b9d333b3, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: b711863ef35ff44b295aeab304868814, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2128,7 +2150,7 @@ Transform:
   m_LocalScale: {x: 1.408, y: 1.4080001, z: 1.4080001}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347392512
 GameObject:
@@ -2273,7 +2295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551071402
 GameObject:
@@ -2326,7 +2348,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.73, y: 0.64}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.73, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2367,12 +2389,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: b9d5f76e6860d8044827609b440a553f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc9bee4b0e82d4d4a83630c8d66551e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.73, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2383,12 +2405,12 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0e6bcf37a2876432fa58eff8888bf177, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1551071402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 4.34, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.8, y: 6.86, z: 0}
   m_LocalScale: {x: 1.8047543, y: 1.8047547, z: 1.8047547}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1110820980}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1601088686
 GameObject:
@@ -2441,7 +2463,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.53, y: 1.25}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.53, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2482,12 +2504,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3a9728502f0a74e4eb7b069a8494a7aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab4a4c178fda04ec793a24fdec1ce0cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.53, y: 1.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2556,7 +2578,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.66, y: 1.23}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.66, y: 1.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2597,12 +2619,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 28a63a00cdd483b4b8e3a92dd5e9afaa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fee331fec52748eca397058814f8584, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.66, y: 1.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2614,7 +2636,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1676283999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.75, y: 3.22, z: 30.824219}
+  m_LocalPosition: {x: -1.69, y: 3.12, z: 30.824219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1702397636}
@@ -2650,7 +2672,7 @@ Transform:
   - {fileID: 88996816}
   - {fileID: 1601088690}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869472701
 GameObject:
@@ -2700,7 +2722,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 7ba48858611ce614ab36d23e7894e54a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0734df6231bd43d58fbfa6b006294c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2721,7 +2743,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1110820980}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1911563913
 GameObject:
@@ -2758,7 +2780,7 @@ Transform:
   - {fileID: 625462183}
   - {fileID: 803680335}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041295306 stripped
 GameObject:
@@ -3062,11 +3084,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 122.078354, y: -765.0605}
+  scrollPos: {x: -50.60954, y: -199.32938}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.81999975
+  zoom: 0.84148395
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -3074,9 +3096,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2139778670}
+  - {fileID: 2139778550}
   selectedCommands:
-  - {fileID: 2139778669}
+  - {fileID: 2139778557}
   variables: []
   description: 
   stepPause: 0
@@ -3172,7 +3194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2139778482
 MonoBehaviour:
@@ -3446,7 +3468,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 115.69832
     y: 113.53864
-    width: 174.39029
+    width: 171.21443
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3499,7 +3521,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 310.09775
     y: 112.538635
-    width: 200.00005
+    width: 196.17035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3545,7 +3567,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -54.30661
     y: 106.328186
-    width: 175.6098
+    width: 172.4028
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3617,7 +3639,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 80.56848
     y: 233.63689
-    width: 192.68297
+    width: 189.04008
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3646,7 +3668,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 123.1291
     y: 160.35684
-    width: 170.73175
+    width: 167.64929
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3922,7 +3944,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1.0859957
     y: 275.5132
-    width: 180.48784
+    width: 177.15631
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4143,7 +4165,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 180.32355
     y: 280.24936
-    width: 162.19516
+    width: 159.33066
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4402,7 +4424,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 919.3155
     y: 106.11656
-    width: 146.34149
+    width: 143.88177
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4428,7 +4450,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 868.105
     y: 165.32706
-    width: 142.68295
+    width: 140.31664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4482,7 +4504,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 854.105
     y: 219.32706
-    width: 159.75613
+    width: 156.95392
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4670,7 +4692,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1025.105
     y: 169.32706
-    width: 154.87808
+    width: 152.20041
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4834,7 +4856,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 857.78784
     y: 330.64227
-    width: 120.73173
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4987,8 +5009,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: 'So... This was an awful long introduction. Maybe we could speak again
-    and you can tell me about yourself as well. Heh. '
+  storyText: 'Well... This was an awfully long introduction. Maybe we could speak
+    again and you can tell me about yourself as well. Heh. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5159,7 +5181,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1359.9017
     y: 109.98552
-    width: 131.70734
+    width: 129.62125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5258,7 +5280,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1308.0557
     y: 168.1875
-    width: 243.9025
+    width: 238.9519
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5309,7 +5331,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1354.9308
     y: 241.62491
-    width: 153.65857
+    width: 151.01202
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5338,7 +5360,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1568.9932
     y: 169.7499
-    width: 257.31714
+    width: 252.02405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5534,7 +5556,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1534.618
     y: 110.37494
-    width: 303.65863
+    width: 297.18237
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6119,7 +6141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1804.4237
     y: 229.17197
-    width: 356.09766
+    width: 348.28256
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6277,7 +6299,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1842.578
     y: 105.58386
-    width: 273.17078
+    width: 267.47296
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6444,7 +6466,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 619.147
     y: 419.09406
-    width: 143.90247
+    width: 141.505
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6539,7 +6561,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 399.921
     y: 450.04898
-    width: 171.95126
+    width: 168.83768
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6680,7 +6702,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 613.62134
     y: 521.6626
-    width: 147.561
+    width: 145.07014
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6710,7 +6732,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 816.4249
     y: 449.2702
-    width: 158.53662
+    width: 155.76553
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6802,7 +6824,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 398.90958
     y: 402.3843
-    width: 169.51224
+    width: 166.46092
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6919,7 +6941,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 817.6874
     y: 402.3843
-    width: 214.6342
+    width: 210.43086
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6969,7 +6991,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 611.076
     y: 621.1704
-    width: 156.0976
+    width: 153.38878
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7070,7 +7092,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 407.71176
     y: 515.70465
-    width: 164.63419
+    width: 161.70743
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7246,7 +7268,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 416.6173
     y: 570.76807
-    width: 154.87808
+    width: 152.20041
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7271,7 +7293,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 805.68634
     y: 575.1986
-    width: 157.31711
+    width: 154.57715
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7296,7 +7318,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 328.82767
     y: 682.03125
-    width: 220.73177
+    width: 216.37276
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7342,7 +7364,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 411.61502
     y: 628.86755
-    width: 121.95124
+    width: 120.11423
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7409,7 +7431,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 826.5494
     y: 688.36035
-    width: 226.82932
+    width: 222.31464
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7543,7 +7565,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 587.5637
     y: 759.2458
-    width: 200.00005
+    width: 196.17035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7560,7 +7582,7 @@ MonoBehaviour:
   - {fileID: 2139778663}
 --- !u!114 &2139778663
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7581,7 +7603,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2139778664
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7602,7 +7624,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2139778665
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7623,7 +7645,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2139778666
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7648,7 +7670,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2139778667
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7673,7 +7695,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2139778668
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7698,7 +7720,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2139778669
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7711,12 +7733,12 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal: MasterScene
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &2139778670
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7729,7 +7751,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 551.4668
     y: 894.60925
-    width: 276.82935
+    width: 271.0381
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7743,7 +7765,7 @@ MonoBehaviour:
   - {fileID: 2139778669}
 --- !u!114 &2139778671
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7768,7 +7790,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2139778672
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7793,7 +7815,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2139778673
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7814,7 +7836,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2139778674
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7827,7 +7849,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 850.2077
     y: 833.48047
-    width: 210.97566
+    width: 206.86574
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7839,7 +7861,7 @@ MonoBehaviour:
   - {fileID: 2139778673}
 --- !u!114 &2139778675
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7860,7 +7882,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2139778676
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7873,7 +7895,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 877.54065
     y: 766.9022
-    width: 158.53662
+    width: 155.76553
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7885,7 +7907,7 @@ MonoBehaviour:
   - {fileID: 2139778675}
 --- !u!114 &2139778677
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7906,7 +7928,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2139778678
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7919,7 +7941,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 374.2979
     y: 749.5966
-    width: 167.07321
+    width: 164.08417
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7931,7 +7953,7 @@ MonoBehaviour:
   - {fileID: 2139778677}
 --- !u!114 &2139778679
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7952,7 +7974,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2139778680
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139778476}
@@ -7965,7 +7987,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 296.3886
     y: 840.56433
-    width: 239.02444
+    width: 234.19841
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
