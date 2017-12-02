@@ -2669,8 +2669,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireLight: {fileID: 10808386}
-  intensityMaxValue: 3
-  intensityMinValue: 2
+  intensityMaxValue: 16.31
+  intensityMinValue: 4
   positionChangeMaxValue: 0.02
 --- !u!114 &11452730
 MonoBehaviour:
